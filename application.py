@@ -1,11 +1,11 @@
-# from flask import Flask, render_template, request
-# from azure.storage.blob import BlobClient
+from flask import Flask, render_template, request
+from azure.storage.blob import BlobClient
 
-# app = Flask(__name__)
+app = Flask(__name__)
 
-# @app.route('/upload')
-# def upload_file():
-#    return render_template('upload.html')
+@app.route('/')
+def upload_file():
+   return render_template('upload.html')
 	
 # @app.route('/uploader', methods = ['GET', 'POST'])
 # def upload():
@@ -19,17 +19,5 @@
 #           blob_client.upload_blob(data)
 #       return "File Uploaded Successfully"
 		
-# if __name__ == '__main__':
-#    app.run()
-   # app.config["C://Users//bprescott//Documents//MSDS//Capstone_COVID19//website"]
-from flask import Flask
-app = Flask(__name__)
-
-
-@app.route("/")
-def hello():
-    return "Hello, SmartNinja!"
-
-
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8080, debug=True)
+   app.run(host='127.0.0.1', port=8080, debug=True)
