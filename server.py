@@ -20,6 +20,5 @@ def upload():
       return "File Uploaded Successfully"
 		
 if __name__ == '__main__':
-   app.run(debug = True)
-   app.run(host='0.0.0.0', port=80)
+   app.run()
    # app.config["C://Users//bprescott//Documents//MSDS//Capstone_COVID19//website"]
