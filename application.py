@@ -3,7 +3,7 @@ from azure.storage.blob import BlobClient
 
 app = Flask(__name__)
 
-@app.route('/tmp/8d9a8ab196bca1c')
+@app.route('/')
 def upload_file():
    return render_template('upload.html')
 	
