@@ -12,8 +12,8 @@
 # #    if request.method == 'POST':
 # #       f = request.files['file']
 # #       f.save(f.filename)
-# #       storage_account_key = "LSRjcStHbWkkpPEVhtWdLfqj/LnhSQ52JEfTIRuXaHPDRESWTFUiurvqW2YZl6McnXoCQp1HVt28YDg3XC7k3A=="
-# #       storage_url = "https://mlstor.blob.core.windows.net/"
+# #       storage_account_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# #       storage_url = "https://{storageaccount}.blob.core.windows.net/"
 # #       blob_client = BlobClient(storage_url, container_name="images", blob_name=f.filename, credential=storage_account_key)
 # #       with open(f.filename, "rb") as data:
 # #           blob_client.upload_blob(data)
